@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="main-page">
+    <div class="input">
+      <div class="input-bill">
+        <label for="bill">Bill</label>
+        <div class="input-bill-num">
+          <input type="text" placeholder="0">
+          <img src="images/icon-dollar.svg" alt="">
+        </div>
+      </div>
+      <div class="select-tip">
+        <div class="tip-label">
+          <label for="Tip">Select Tip %</label>
+        </div>
+        <div class="tip-btn">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn active">50%</button>
+          <input type="text" name="" id="" class="inputTip" placeholder="Custom">
+        </div>
+      </div>
+      <div class="people">
+        <div class="people-label">
+          <label for="" class="people-num">Number of People</label>
+          <label for="" class="zero-people">Can't be zero</label>
+        </div>
+        <div class="people-input">
+          <input type="text" placeholder="0">
+          <img src="images/icon-person.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="output">
+      <div class="container-box">
+        <div class="ta container">
+          <div class="text">
+            <label for="" class="ta wht-label">Tip Amount</label><br>
+            <label for="" class="person">/ person</label>
+          </div>
+          <div class="num">
+            <input type="text" value="0.00" class="screenOut" disabled>
+          </div>
+        </div>
+
+        <div class="tot container">
+          <div class="text">
+            <label for="" class="tot wht-label">Totals</label><br>
+            <label for="" class="person">/ person</label>
+          </div>
+          <div class="num">
+            <input type="text" value="0.00" class="screenOut" disabled>
+          </div>
+        </div>
+      </div>
+
+      <button class="reset-btn">RESET</button>
+    </div>
+  </div>
+</body>
+</html>
