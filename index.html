@@ -11,10 +11,10 @@
 <body>
   <div class="main-page">
     <div class="input">
-      <div class="input-bill">
+      <div class="input-bill-container">
         <label for="bill">Bill</label>
         <div class="input-bill-num">
-          <input type="text" placeholder="0">
+          <input class="input-bill" id="input-bill" type="text" placeholder="0">
           <img src="images/icon-dollar.svg" alt="">
         </div>
       </div>
@@ -23,12 +23,12 @@
           <label for="Tip">Select Tip %</label>
         </div>
         <div class="tip-btn">
-          <button class="btn">5%</button>
-          <button class="btn">10%</button>
-          <button class="btn">15%</button>
-          <button class="btn">25%</button>
-          <button class="btn active">50%</button>
-          <input type="text" name="" id="" class="inputTip" placeholder="Custom">
+          <button class="tip btn active">5%</button>
+          <button class="tip btn ">10%</button>
+          <button class="tip btn ">15%</button>
+          <button class="tip btn ">25%</button>
+          <button class="tip btn ">50%</button>
+          <input type="text" id="inputTip" class="inputTip" placeholder="Custom">
         </div>
       </div>
       <div class="people">
@@ -37,7 +37,7 @@
           <label for="" class="zero-people">Can't be zero</label>
         </div>
         <div class="people-input">
-          <input type="text" placeholder="0">
+          <input id="people-num-input" type="text" placeholder="1">
           <img src="images/icon-person.svg" alt="">
         </div>
       </div>
@@ -50,7 +50,7 @@
             <label for="" class="person">/ person</label>
           </div>
           <div class="num">
-            <input type="text" value="0.00" class="screenOut" disabled>
+            <input type="text" value="$0.00" class="tip-amount-screen screenOut" disabled>
           </div>
         </div>
 
@@ -60,7 +60,7 @@
             <label for="" class="person">/ person</label>
           </div>
           <div class="num">
-            <input type="text" value="0.00" class="screenOut" disabled>
+            <input type="text" value="$0.00" class="total-screen screenOut" disabled>
           </div>
         </div>
       </div>
@@ -69,4 +69,6 @@
     </div>
   </div>
 </body>
+
+<script src="app.js"></script>
 </html>
